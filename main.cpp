@@ -1,7 +1,15 @@
 #include <iostream>
 #include "bull.h"
+#include "node.h"
 
 using namespace std;
+
+void print(Node *node){
+    while(node!= nullptr){
+        cout << node->get_data() << endl;
+        node = node->get_next();
+    }
+}
 
 int main() {
 
@@ -12,8 +20,8 @@ int main() {
     cout << giant1.to_string() << endl;
     cout << weideman.to_string() << endl;
     cout << giant2.to_string() << endl;
-
-    /*Node start(0);
+    
+    Node start(0);
     Node second(1);
     Node last(2);
 
@@ -21,5 +29,5 @@ int main() {
     start.set_next(&second);
 
     print(&start);
-    */
+
 }

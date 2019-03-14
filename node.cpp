@@ -1,15 +1,17 @@
-#include "bull.h"
+#include "node.h"
 
-Node::Node(int weight, int liftcapacity, std::string name) {
-    
+Node::Node(int data){
+    this->data = data;
 }
 
-Node::set_next(Node * next){
-
+void Node::set_next(Node * node){
+    this->next = node;
 }
         
-Node * get_next(void);
+Node *Node::get_next(){
+    return this->next;
+}
 
-Node::get_data(void){
-
+int Node::get_data(){
+    return this->data;
 }

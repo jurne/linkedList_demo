@@ -1,7 +1,6 @@
 #pragma once
 
 class Node {
-
     public: 
         Node(int data);
     
@@ -14,4 +13,5 @@ class Node {
     private:
         int data;
         Node * next;
-}
+        Node * last = nullptr;
+};
