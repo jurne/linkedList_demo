@@ -1,4 +1,7 @@
 #include "node.h"
+#include "bull.h"
+#include <string>
+#include <iostream>
 
 Node::Node(int data){
     this->data = data;
@@ -12,6 +15,6 @@ Node *Node::get_next(){
     return this->next;
 }
 
-int Node::get_data(){
-    return this->data;
+std::string Node::get_data(void){
+    return std::to_string(data);
 }

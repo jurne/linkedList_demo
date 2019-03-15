@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <string>
 
 class Node {
     public: 
@@ -8,10 +10,9 @@ class Node {
         void set_next(Node * next);
         Node * get_next(void);
 
-        int get_data(void);
+        std::string get_data(void);
     
     private:
         int data;
-        Node * next;
-        Node * last = nullptr;
+        Node * next = nullptr;
 };
